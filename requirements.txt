@@ -1,0 +1,7 @@
+kaleido
+numpy
+pandas
+plotly
+plotly-geo
+requests
+selenium
