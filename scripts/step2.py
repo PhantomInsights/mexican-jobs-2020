@@ -89,7 +89,7 @@ def parse_file(file_name, file_date):
 
         state, municipality = location.split(",")
 
-        scholarship = html.xpath(
+        education_level = html.xpath(
             "//strong[contains(text(),'Estudios Solicitados:')]/following-sibling::div")[0].text.strip()
 
         languages = html.xpath(
@@ -110,7 +110,7 @@ def parse_file(file_name, file_date):
         data_list.append((file_date, clean_name, clean_salary, contract_type,
                           start_hour, end_hour, hours_worked, monday, tuesday,
                           wednesday, thursday, friday, saturday, sunday, days_worked,
-                          state.strip(), municipality.strip(), scholarship, experience,
+                          state.strip(), municipality.strip(), education_level, experience,
                           languages))
 
 
@@ -139,10 +139,10 @@ if __name__ == "__main__":
 
     # We use multithreading to accelerate the reading of all files.
     data_list = list()
-    data_list.append(["date", "offer", "salary", "contract_type", "start_hour",
+    data_list.append(["isodate", "offer", "salary", "contract_type", "start_hour",
                       "end_hour", "hours_worked", "monday", "tuesday", "wednesday",
                       "thursday", "friday", "saturday", "sunday", "days_worked",
-                      "state", "municipality", "scholarship", "experience", "languages"])
+                      "state", "municipality", "education_level", "experience", "languages"])
 
     for file_name, file_date in load_files():
         parse_file(file_name, file_date)

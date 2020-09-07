@@ -1,4 +1,4 @@
-isodate,offer,salary,contract_type,start_hour,end_hour,hours_worked,monday,tuesday,wednesday,thursday,friday,saturday,sunday,days_worked,state,municipality,scholarship,experience,languages
+isodate,offer,salary,contract_type,start_hour,end_hour,hours_worked,monday,tuesday,wednesday,thursday,friday,saturday,sunday,days_worked,state,municipality,education_level,experience,languages
 2020-08-01,becario recursos humanos,5000,Contrato por tiempo indeterminado,800,1800,10.0,1,1,1,1,1,0,0,5,Ciudad de México,Miguel Hidalgo,Licenciatura,6m - 1 año,No es requisito
 2020-08-01,becario auditoria,5000,Contrato por tiempo indeterminado,800,1800,10.0,1,1,1,1,1,0,0,5,Ciudad de México,Miguel Hidalgo,Licenciatura,No especificada,No es requisito
 2020-08-01,gerente operaciones,30000,Contrato por tiempo indeterminado,800,1800,10.0,1,1,1,1,1,0,0,5,Ciudad de México,Cuauhtémoc,Licenciatura,6m - 1 año,No es requisito
