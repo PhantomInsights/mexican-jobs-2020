@@ -302,10 +302,10 @@ fig.add_traces(go.Scatter(x=monday_df.index, y=monday_df.values,
                             line_color="#c6ff00", mode="markers", marker_size=18))
 
 fig.update_xaxes(title="Date (2020)", ticks="outside", ticklen=10,
-                    tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=12)
+                    tickcolor="#FFFFFF", linewidth=2, gridwidth=0.5, showline=True, mirror=True, nticks=12)
 
 fig.update_yaxes(title="Number of Job Offers", ticks="outside", ticklen=10,
-                    tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=12)
+                    tickcolor="#FFFFFF", linewidth=2, gridwidth=0.5, showline=True, mirror=True, nticks=12)
 ```
 
 We add final customizations.
@@ -456,11 +456,11 @@ We add final customizations.
 
 ```python
 
-fig.update_xaxes(title="Monthly Salary", ticks="outside", ticklen=10, showgrid=False,
+fig.update_xaxes(title="Monthly Salary", ticks="outside", ticklen=10, gridwidth=0.5,
                     tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=35, title_standoff=20)
 
 fig.update_yaxes(title="Number of Job Offers", ticks="outside", ticklen=10,
-                    tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=12, title_standoff=5)
+                    tickcolor="#FFFFFF", linewidth=2, gridwidth=0.5, showline=True, mirror=True, nticks=12, title_standoff=5)
 ```
 
 We add final customizations.
@@ -797,3 +797,5 @@ I really liked `Plotly`, it has a ton of customizations and once you get the han
 For the job offers, the situation is very grim. When I did this project in 2018 I collected around 36,000 job offers. This time I only collected 10,000 and that was with the help of secondary scripts to fix all the issues.
 
 There are some fields I didn't covered in this article but you are always free to study the dataset.
+
+[![Become a Patron!](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=20521425)

@@ -41,10 +41,10 @@ def days_stats(df):
     fig.add_traces(go.Scatter(x=monday_df.index, y=monday_df.values,
                               line_color="#c6ff00", mode="markers", marker_size=18))
 
-    fig.update_xaxes(title="Date (2020)", ticks="outside", ticklen=10,
+    fig.update_xaxes(title="Date (2020)", ticks="outside", ticklen=10, gridwidth=0.5,
                      tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=12)
 
-    fig.update_yaxes(title="Number of Job Offers", ticks="outside", ticklen=10,
+    fig.update_yaxes(title="Number of Job Offers", ticks="outside", ticklen=10, gridwidth=0.5,
                      tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=12)
 
     # Add final customizations.
@@ -86,10 +86,10 @@ def salaries_stats(df):
     fig.add_traces(go.Histogram(
         x=salaries["salary"], nbinsx=35, marker_color="#ffa000"))
 
-    fig.update_xaxes(title="Monthly Salary", ticks="outside", ticklen=10, showgrid=False,
+    fig.update_xaxes(title="Monthly Salary", ticks="outside", ticklen=10, gridwidth=0.5,
                      tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=35, title_standoff=20)
 
-    fig.update_yaxes(title="Number of Job Offers", ticks="outside", ticklen=10,
+    fig.update_yaxes(title="Number of Job Offers", ticks="outside", ticklen=10, gridwidth=0.5,
                      tickcolor="#FFFFFF", linewidth=2, showline=True, mirror=True, nticks=12, title_standoff=5)
 
     # Add final customizations.
