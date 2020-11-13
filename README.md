@@ -62,7 +62,7 @@ def create_driver():
 
 Now it's time for the main function. We start by opening the main job offers website and iterating over each state.
 
-There's a dropdown menu with the names of each state in Mexico, we select one at time and browse the first 5 pages of results.
+There's a dropdown menu with the names of each state in Mexico, we select one at a time and browse the first 5 pages of results.
 
 ```python
 driver = create_driver()
@@ -163,10 +163,9 @@ I had to run this script daily and it usually fixed all the corrupt files on the
 
 Extracting the data from the HTML documents is made using `lxml` which is a very fast parser. I found out that the HTML documents came in at least 3 different formats. We will use `XPath` to make the parsing more consistent.
 
-We will make the use of a list of lists that will be later saved to a CSV file. We initiate this list with a header row and start iterating over all of our files.
+We will make the use of a list of lists that will be later saved to a CSV file. We initialize this list with a header row and start iterating over all of our files.
 
 ```python
-# We use multithreading to accelerate the reading of all files.
 data_list = list()
 data_list.append(["isodate", "offer", "salary", "contract_type", "start_hour",
                     "end_hour", "hours_worked", "monday", "tuesday", "wednesday",
